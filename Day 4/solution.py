@@ -27,6 +27,8 @@ def validateData(line):
     elif 'in' in hgt:
         if not hgt.split('in')[0].isdigit() or int(hgt.split('in')[0]) < 59 or int(hgt.split('in')[0]) > 76:
             return False
+    elif ('cm' or 'in') not in hgt:
+        return False
 
     if re.match('^#[0-9a-f]{6}$', hcl) == None:
         return False
