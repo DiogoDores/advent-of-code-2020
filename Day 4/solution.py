@@ -37,7 +37,6 @@ def validateData(line):
     if not pid.isdigit() or len(pid) != 9:
         return False
 
-    print(byr, iyr, eyr, hgt, hcl, ecl, pid)
     return True
 
 for line in f.read().split("\n\n"):
