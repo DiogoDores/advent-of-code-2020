@@ -1,10 +1,7 @@
 import copy
 f = open("input.txt", "r")
 
-myTicket = []
-tickets = []
-ranges = []
-invalid = []
+myTicket, tickets, invalid = [], [], []
 restrictions = {}
 
 for line in f:
