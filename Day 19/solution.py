@@ -10,7 +10,6 @@ for line in rules_txt.splitlines():
 
 messages = messages_txt.split('\n')
 
-
 def follow_rules(key):
     if rules[key] in 'ab':
         return rules[key]
@@ -41,5 +40,3 @@ while cnt1 != cnt2:
     index += 1
 
 print("Part 2: ", cnt1)
-
-
